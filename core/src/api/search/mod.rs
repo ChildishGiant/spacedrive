@@ -140,7 +140,7 @@ pub fn mount() -> AlphaRouter<Ctx> {
 					};
 
 					let rules = chain_optional_iter(
-						[IndexerRule::from(no_os_protected())],
+						[],
 						[(!with_hidden_files).then(|| IndexerRule::from(no_hidden()))],
 					);
 
